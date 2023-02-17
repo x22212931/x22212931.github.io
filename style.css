@@ -1,0 +1,52 @@
+body{
+	background:#333;
+}
+p{
+	font-family:Courier New,monospace;
+}
+
+
+.hello{
+	color:#00FF00;
+	font-family:Courier New,monospace;
+	font-weight: bold;
+	font-size:200%;
+}
+
+.tlt1{
+	color:#008000;
+	font-family:Courier New,monospace;
+	
+}
+.listone{
+	color:#8FBC8F;
+	font-family:Courier New,monospace;
+	
+}
+
+.listtwo{
+	color:#F4A460;
+	font-family:Courier New,monospace;
+	
+}
+
+
+
+p.welcome{ 
+
+	color:#556B2F;
+	font-family:Courier New,monospace;
+}
+
+
+span.to{ 
+
+color:#FFFFFF;
+font-family:Courier New,monospace;
+
+ }
+span.nci{
+	color:#F4A460;
+	font-family:Courier New,monospace;
+	}
+
