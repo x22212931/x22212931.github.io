@@ -1,13 +1,11 @@
+
 body{
-	background:white;
+background:#333;
+color:lime;
+font-family:Georgia;
+text-align:center;
 }
-p{
-	color:darkblue;
-	font-family:Georgia;	
+h1{
+display:none;
 }
 
-.row{
-	margin-top:100px;
-	min-height:100px;
-	justify-content:space-between;
- 
