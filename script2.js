@@ -11,6 +11,7 @@ function scores(){
 			score = prompt("Please enter your marks from 0 to 100 for subject number "+i);
 			score = score * 1;
 			summary= (score) + (summary);
+			document.getElementById("main").innerHTML+="<br />"+"Your Result on subject "+i+" is "+score;
 
 
 		}
