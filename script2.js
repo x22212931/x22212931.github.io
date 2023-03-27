@@ -12,8 +12,6 @@ function scores(){
 			score = score * 1;
 			summary= (score) + (summary);
 			document.getElementById("main").innerHTML+="<br />"+"Your Result on subject "+i+" is "+score;
-
-
 		}
 
 		document.getElementById("main").innerHTML+="<br />"+"Your average score is: "+ (summary/num);
