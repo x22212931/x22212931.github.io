@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+		<link rel="stylesheet" href="../style/style.css"/>
+	</head>
+	<body>
+	<!-- Up Header links to other site pages -->
+		<div id="header">
+			<div id="header1"><img src="../images/logo.jpg" alt="Logo"></div>
+			<div id="header2">
+				<div class="link"><a href="../index.html">Home</a></div>
+				<div class="link"><a href="../about/index.html">About</a></div>
+				<div class="link"><a href="../direct/index.html">Direct Flight Check</a></div>
+				<div class="link"><a href="../contact/index.html">Contact</a></div>
+			</div>
+		</div>
+		<div id="main">
+			<div id="sidebar">
+				<h1>Contact us</h1>
+			</div>
+			<!--Main content with Form that will collect User's name, email origin and destine -->
+			<div id="content">
+				<h1>Find out More About our Options</h1>
+				<form name="formNameEmail" method="GET" action="?">
+  Name: <input type="text" id="fname" name="fname"><br>
+  E-mail: <input type="text" id="email"  name="mail"><br>
+     <label for="origin">Select a origin:</label>
+      <select id="origin" name="origin">
+        <option value="amsterdam">Amsterdam</option>
+        <option value="athens">Athens</option>
+        <option value="berlin">Berlin</option>
+        <option value="bratislava">Bratislava</option>
+        <option value="brussels">Brussels</option>
+        <option value="bucharest">Bucharest</option>
+        <option value="budapest">Budapest</option>
+        <option value="copenhagen">Copenhagen</option>
+        <option value="dublin">Dublin</option>
+        <option value="helsinki">Helsinki</option>
+        <option value="lisbon">Lisbon</option>
+        <option value="ljubljana">Ljubljana</option>
+        <option value="london">London</option>
+        <option value="luxembourg">Luxembourg</option>
+        <option value="madrid">Madrid</option>
+        <option value="nicosia">Nicosia</option>
+        <option value="paris">Paris</option>
+        <option value="prague">Prague</option>
+        <option value="riga">Riga</option>
+        <option value="rome">Rome</option>
+        <option value="slovakia">Slovakia</option>
+        <option value="sofia">Sofia</option>
+        <option value="stockholm">Stockholm</option>
+        <option value="tallinn">Tallinn</option>
+        <option value="valletta">Valletta</option>
+        <option value="vienna">Vienna</option>
+        <option value="vilnius">Vilnius</option>
+        <option value="warsaw">Warsaw</option>
+        <option value="zagreb">Zagreb</option>
+      </select><br>
+   <label for="destine">Select a destination:</label>
+      <select id="destine" name="destine">
+        <option value="amsterdam">Amsterdam</option>
+        <option value="athens">Athens</option>
+        <option value="berlin">Berlin</option>
+        <option value="bratislava">Bratislava</option>
+        <option value="brussels">Brussels</option>
+        <option value="bucharest">Bucharest</option>
+        <option value="budapest">Budapest</option>
+        <option value="copenhagen">Copenhagen</option>
+        <option value="dublin">Dublin</option>
+        <option value="helsinki">Helsinki</option>
+        <option value="lisbon">Lisbon</option>
+        <option value="ljubljana">Ljubljana</option>
+        <option value="london">London</option>
+        <option value="luxembourg">Luxembourg</option>
+        <option value="madrid">Madrid</option>
+        <option value="nicosia">Nicosia</option>
+        <option value="paris">Paris</option>
+        <option value="prague">Prague</option>
+        <option value="riga">Riga</option>
+        <option value="rome">Rome</option>
+        <option value="slovakia">Slovakia</option>
+        <option value="sofia">Sofia</option>
+        <option value="stockholm">Stockholm</option>
+        <option value="tallinn">Tallinn</option>
+        <option value="valletta">Valletta</option>
+        <option value="vienna">Vienna</option>
+        <option value="vilnius">Vilnius</option>
+        <option value="warsaw">Warsaw</option>
+        <option value="zagreb">Zagreb</option>
+      </select>
+  <br><br>
+  
+  <input type="submit" value="Submit"> 
+
+</form>
+
+<p id="afterFormAnswer"></p>
+
+<!-- The objective of following javascript is collect the information inserted on the previous form and pop up a message to user  -->
+<script>
+  document.forms['formNameEmail'].addEventListener('submit', function (event) {
+  var email = document.getElementById("email").value;
+  var fname = document.getElementById("fname").value;
+  var origin = document.getElementById("origin").value;
+  var destine = document.getElementById("destine").value;
+  submitOK = "true";
+
+
+
+ document.getElementById("afterFormAnswer").innerHTML = fname + ", thank you for your details. We will be in touch via " + email + " about your trip from " + origin + " to " + destine + " shortly.";
+
+ 
+this.style['display'] = 'none';
+            event.preventDefault();
+        });
+</script>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="foot"></div>
+			<div class="foot"><h3>&copy; TripWithLip</h3></div>
+			<div class="foot"></div>
+		</div>		
+	</body>
+</html>
