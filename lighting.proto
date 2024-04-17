@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Lighting {
+  rpc ToggleLights (LightingRequest) returns (LightingResponse) {}
+}
+
+message LightingRequest {
+  bool on = 1;
+}
+
+message LightingResponse {
+  bool success = 1;
+}

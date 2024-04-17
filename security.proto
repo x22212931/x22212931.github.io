@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Security {
+  rpc ArmSystem (SecurityRequest) returns (SecurityResponse) {}
+}
+
+message SecurityRequest {
+  bool arm = 1;
+}
+
+message SecurityResponse {
+  bool success = 1;
+}
